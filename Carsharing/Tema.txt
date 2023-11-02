@@ -1,0 +1,37 @@
+                +-----------------+
+                | Mobile          |
+                | Application     |
+                +-----------------+
+                         |
+                         | requests/rents car
+                         |
+                +-----------------+
+                | Car             |
+                | (Telematics     |
+                | Module)         |
+                +-----------------+
+                         |
+                         | sends telemetry data
+                         |
+                +-----------------+
+                | Producer        |
+                | Backend         |
+                +-----------------+
+
+
+⦁	Who is the client and who is the server? (0.5 point)
+The client is the user of the mobile application, who requests or rents a car. The server is the producer backend, which manages the carsharing service.
+
+⦁	Who communicates with whom? (0.5 point)
+The mobile application communicates with the car and the producer backend. The car communicates with the producer backend.
+
+⦁	What is the scope of each of the three components of the system? (1 point)
+Mobile application: Allows users to request or rent a car, and to receive information about the car's location, status, and other relevant data.
+Car (Telematics Module): Provides telemetry data to the producer backend, such as the car's location, speed, fuel level, and maintenance status.
+Producer Backend: Manages the carsharing service, including user registration, car inventory, rental scheduling, payment processing, and customer support.
+
+⦁	What are the messages that the three entities need to exchange among themselves in order to achieve the desired functionality? (1 point)
+Mobile application to producer backend: Car rental request, user authentication, payment information.
+Car (Telematics Module) to producer backend: Telemetry data such as GPS location, speed, fuel level, and maintenance status.
+Producer backend to mobile application: Car availability, rental confirmation, rental status updates, payment confirmation, customer support messages.
+Producer backend to car (Telematics Module): Remote control commands, such as unlocking/locking doors, starting/stopping the engine, turning on/off lights, setting climate control, and activating/deactivating alarms.
